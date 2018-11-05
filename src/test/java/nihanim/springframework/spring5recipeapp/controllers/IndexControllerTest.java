@@ -44,10 +44,8 @@ public class IndexControllerTest {
     @Test
     public void getIndexPage() throws Exception {
 
-        Recipe recipe1 = new Recipe();
-        recipe1.setId(1l);
-        Recipe recipe2 = new Recipe();
-        recipe2.setId(2l);
+        Recipe recipe1 = Recipe.builder().id(1l).build();
+        Recipe recipe2 = Recipe.builder().id(2l).build();
         Set<Recipe> recipes = new HashSet<>();
         recipes.add(recipe1);
         recipes.add(recipe2);

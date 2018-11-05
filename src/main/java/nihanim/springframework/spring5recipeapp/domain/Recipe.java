@@ -1,5 +1,6 @@
 package nihanim.springframework.spring5recipeapp.domain;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -7,6 +8,7 @@ import java.util.Set;
 
 @Data
 @Entity
+@Builder
 public class Recipe {
 
     @Id
